@@ -1,0 +1,14 @@
+<h1>Hello! My name is: <%= @name%></h1>
+
+<h2> This is my email: <%= @email%></h2>
+
+<h3> My hobbies include: <%= @interests%></h3>
+
+<h4>Other Peeps:</h4>
+        <ul>
+          <% @psych.each do |name, _| %>
+            <% unless name == @name %>
+             <li> <a href="<%=name%>"><%= name%></a> </li>
+          <% end %>
+          <% end %>
+        </ul>

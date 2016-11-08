@@ -1,0 +1,10 @@
+<!doctype html>
+<html>
+  <head>
+    <title>PeepBook</title>
+  </head>
+  <body>
+    <%=yield%>
+    <p> There are <%= @psych.size%> users with a total of <%=counter_interests(@psych)%> interests</p>
+  </body>
+</html>
